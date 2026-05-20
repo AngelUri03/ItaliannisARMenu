@@ -1,0 +1,760 @@
+/* =========================================================
+   10_Welcome.uss
+   Ajuste fijo para Samsung Galaxy Tab S10 FE horizontal
+   Objetivo visual: 2304 x 1440
+   Clases reales de WelcomeView.uxml
+   ========================================================= */
+
+.welcome-view {
+    width: 100%;
+    height: 100%;
+    background-color: #070504;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+/* =========================================================
+   Fondos decorativos
+   ========================================================= */
+
+.ambient {
+    position: absolute;
+    border-radius: 999px;
+}
+
+.ambient-red {
+    width: 780px;
+    height: 540px;
+    right: -170px;
+    top: -155px;
+    background-color: rgba(111, 23, 23, 0.72);
+}
+
+.ambient-gold {
+    width: 560px;
+    height: 420px;
+    left: 980px;
+    bottom: -255px;
+    background-color: rgba(214, 170, 91, 0.12);
+}
+
+.ambient-green {
+    width: 520px;
+    height: 410px;
+    left: -180px;
+    bottom: -195px;
+    background-color: rgba(35, 107, 58, 0.30);
+}
+
+/* =========================================================
+   Shell
+   ========================================================= */
+
+.welcome-shell {
+    width: 2050px;
+    height: 1160px;
+
+    border-radius: 40px;
+    background-color: rgba(16, 11, 8, 0.94);
+
+    border-width: 1px;
+    border-color: rgba(214, 170, 91, 0.24);
+
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 46px;
+    padding-bottom: 42px;
+}
+
+/* =========================================================
+   Header superior
+   ========================================================= */
+
+.welcome-top {
+    height: 180px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.brand-stack {
+    flex-direction: column;
+}
+
+.brand-title {
+    -unity-font-definition: url("../Fonts/Generated/BrandFont.asset");
+    font-size: 100px;
+    -unity-font-style: bold;
+    color: var(--color-text);
+    letter-spacing: 3px;
+}
+
+.brand-subtitle {
+    -unity-font-definition: url("../Fonts/Generated/InterfaceFontSemiBold.asset");
+    font-size: 20px;
+    -unity-font-style: bold;
+    color: var(--color-gold);
+    letter-spacing: 5px;
+    margin-top: -25px;
+}
+
+.top-status {
+    flex-direction: row;
+    align-items: center;
+    margin-top: 6px;
+}
+
+.top-status .pill {
+    height: 50px;
+    min-width: 100px;
+    font-size: 20px;
+    padding-top: 10px;
+    margin-left: 10px;
+    border-radius: 20px
+}
+
+.top-status .pill-green {
+    min-width: 220px;
+}
+
+/* =========================================================
+   Layout principal
+   ========================================================= */
+
+.welcome-content {
+    flex-grow: 1;
+    flex-direction: row;
+}
+
+.hero-copy {
+    width: 850px;
+    height: 100%;
+    padding-right: 34px;
+    justify-content: flex-start;
+}
+
+.hero-visual {
+    width: 1200px;
+    height: 100%;
+    justify-content: flex-start;
+    padding-left: 30px;
+}
+
+/* =========================================================
+   Lado izquierdo
+   ========================================================= */
+
+.welcome-eyebrow {
+    width: 750px;
+    height: 40px;
+
+    border-radius: 20px;
+    background-color: rgba(214, 170, 91, 0.13);
+
+    color: var(--color-gold);
+    -unity-font-definition: url("../Fonts/Generated/InterfaceFontSemiBold.asset");
+    font-size: 18px;
+    -unity-font-style: bold;
+    letter-spacing: 3px;
+    -unity-text-align: middle-center;
+
+    margin-top: 25px;
+    margin-bottom: 20px;
+
+}
+
+.hero-title {
+    width: 780px;
+
+    -unity-font-definition: url("../Fonts/Generated/BrandFont.asset");
+    font-size: 41px;
+    -unity-font-style: bold;
+    color: var(--color-text);
+
+    white-space: normal;
+    margin-top: 20px;
+
+}
+
+.hero-description {
+    width: 800px;
+
+    font-size: 21px;
+    color: var(--color-text-soft);
+    white-space: normal;
+
+    margin-top: 0px;
+    margin-bottom: 25px;
+}
+
+/* =========================================================
+   Botones
+   ========================================================= */
+
+.hero-actions {
+    width: 720px;
+    height: 62px;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 45px;
+    margin-bottom: 60px;
+}
+
+.hero-actions .button-xl {
+    height: 60px;
+    font-size: 20px;
+    -unity-font-style: bold;
+}
+
+#start-experience-button {
+    width: 360px;
+    margin-right: 20px;
+}
+
+#learn-more-button {
+    width: 360px;
+}
+
+/* =========================================================
+   Métricas RA / 3D / UX
+   ========================================================= */
+
+.welcome-trust-row {
+    width: 748px;
+    height: 85px;
+
+    flex-direction: row;
+
+    border-radius: 32px;
+    background-color: rgba(255, 243, 223, 0.055);
+
+    border-width: 1px;
+    border-color: rgba(255, 243, 223, 0.08);
+
+    margin-bottom: 28px;
+}
+
+.trust-item {
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.trust-value {
+    font-size: 30px;
+    -unity-font-style: bold;
+    color: var(--color-gold);
+    -unity-text-align: middle-center;
+}
+
+.trust-label {
+    font-size: 15px;
+    color: var(--color-text-muted);
+    -unity-text-align: middle-center;
+    margin-top: -2px;
+}
+
+.trust-separator {
+    width: 1px;
+    height: 52px;
+    background-color: rgba(255, 243, 223, 0.08);
+    margin-top: 10px;
+}
+
+/* =========================================================
+   Flujo inferior izquierdo
+   ========================================================= */
+
+.experience-flow {
+    width: 780px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 35px;
+}
+
+.flow-step {
+    width: 360px;
+    height: 115px;
+
+    flex-direction: row;
+    align-items: center;
+
+    border-radius: 25px;
+
+    background-color: rgba(255, 243, 223, 0.055);
+
+    border-width: 1px;
+    border-color: rgba(255, 243, 223, 0.08);
+
+    padding-left: 16px;
+    padding-right: 14px;
+
+    margin-right: 25px;
+    margin-bottom: 28px;
+}
+
+.flow-number {
+    width: 40px;
+    height: 40px;
+
+    border-radius: var(--radius-pill);
+    background-color: rgba(214, 170, 91, 0.13);
+
+    color: var(--color-gold);
+    font-size: 20px;
+    -unity-font-style: bold;
+    -unity-text-align: middle-center;
+
+    margin-right: 15px;
+}
+
+.flow-title {
+    font-size: 22px;
+    -unity-font-style: bold;
+    color: var(--color-text);
+    margin-bottom: 3px;
+}
+
+.flow-text {
+    width: 228px;
+    font-size: 16px;
+    color: var(--color-text-muted);
+    white-space: normal;
+}
+
+/* =========================================================
+   Preview derecho
+   ========================================================= */
+
+.premium-preview-card {
+    width: 1100px;
+    height: 590px;
+
+    border-radius: 34px;
+
+    background-color: rgba(10, 7, 5, 0.76);
+
+    border-width: 1px;
+    border-color: rgba(214, 170, 91, 0.28);
+
+    padding: 26px;
+
+    margin-top: 25px;
+}
+
+.preview-header {
+    height: 44px;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.preview-live-dot {
+    width: 15px;
+    height: 15px;
+    border-radius: var(--radius-pill);
+    background-color: var(--color-green);
+    margin-right: 13px;
+}
+
+.preview-title {
+    flex-grow: 1;
+    font-size: 22px;
+    -unity-font-style: bold;
+    color: var(--color-text);
+}
+
+.preview-badge {
+    width: 100px;
+    height: 35px;
+
+    border-radius: var(--radius-pill);
+    background-color: var(--color-gold);
+
+    color: #21140d;
+
+    font-size: 15px;
+    -unity-font-style: bold;
+    -unity-text-align: middle-center;
+}
+
+.preview-stage {
+    flex-grow: 1;
+}
+
+.table-surface {
+    width: 100%;
+    height: 470px;
+
+    border-radius: 28px;
+
+    background-color: rgba(214, 170, 91, 0.14);
+
+    border-width: 1px;
+    border-color: rgba(214, 170, 91, 0.12);
+
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+}
+
+/* =========================================================
+   Plato del preview
+   ========================================================= */
+
+.marker-card {
+    position: absolute;
+    left: 125px;
+    bottom: 50px;
+
+    width: 180px;
+    height: 72px;
+
+    border-radius: 17px;
+
+    background-color: rgba(16, 11, 8, 0.58);
+
+    border-width: 1px;
+    border-color: rgba(255, 243, 223, 0.10);
+
+    justify-content: center;
+    align-items: center;
+}
+
+.marker-text {
+    font-size: 12px;
+    -unity-font-style: bold;
+    color: rgba(255, 243, 223, 0.70);
+    -unity-text-align: middle-center;
+}
+
+.plate-shadow {
+    position: absolute;
+
+    width: 360px;
+    height: 38px;
+
+    bottom: 76px;
+
+    border-radius: 999px;
+    background-color: rgba(0, 0, 0, 0.20);
+}
+
+.plate {
+    width: 300px;
+    height: 300px;
+
+    border-radius: 999px;
+
+    background-color: rgba(245, 220, 154, 0.72);
+
+    justify-content: center;
+    align-items: center;
+}
+
+.pizza-base {
+    width: 205px;
+    height: 205px;
+
+    border-radius: 999px;
+
+    background-color: rgba(190, 76, 34, 0.94);
+}
+
+.pizza-slice {
+    position: absolute;
+    border-radius: 999px;
+    background-color: rgba(230, 190, 94, 0.96);
+}
+
+.slice-one {
+    width: 26px;
+    height: 26px;
+    left: 72px;
+    top: 64px;
+}
+
+.slice-two {
+    width: 23px;
+    height: 23px;
+    left: 128px;
+    top: 108px;
+}
+
+.slice-three {
+    width: 25px;
+    height: 25px;
+    left: 102px;
+    top: 140px;
+}
+
+/* =========================================================
+   Etiquetas flotantes
+   ========================================================= */
+
+.model-label {
+    position: absolute;
+
+    width: 280px;
+    height: 100px;
+
+    border-radius: 19px;
+
+    background-color: rgba(16, 11, 8, 0.88);
+
+    border-width: 1px;
+    border-color: rgba(255, 243, 223, 0.08);
+
+    padding: 15px;
+}
+
+.model-label-top {
+    right: 70px;
+    top: 78px;
+}
+
+.model-label-small {
+    font-size: 12px;
+    color: var(--color-text-muted);
+    margin-bottom: 5px;
+}
+
+.model-label-main {
+    font-size: 18px;
+    -unity-font-style: bold;
+    color: var(--color-text);
+}
+
+.preview-control-card {
+    position: absolute;
+
+    width: 158px;
+    height: 100px;
+
+    border-radius: 17px;
+
+    background-color: rgba(16, 11, 8, 0.88);
+
+    border-width: 1px;
+    border-color: rgba(255, 243, 223, 0.08);
+
+    padding: 15px;
+}
+
+.control-left {
+    left: 80px;
+    top: 116px;
+}
+
+.control-right {
+    right: 72px;
+    bottom: 62px;
+}
+
+.floating-title {
+    font-size: 11px;
+    color: var(--color-text-muted);
+    margin-bottom: 5px;
+}
+
+.floating-value {
+    font-size: 20px;
+    -unity-font-style: bold;
+    color: var(--color-text);
+}
+
+/* =========================================================
+   Nota inferior derecha
+   ========================================================= */
+
+.premium-note-card {
+    width: 1100px;
+    height: 190px;
+
+    border-radius: 25px;
+
+    background-color: rgba(214, 170, 91, 0.10);
+
+    border-width: 1px;
+    border-color: rgba(214, 170, 91, 0.18);
+
+    padding-left: 28px;
+    padding-right: 28px;
+    padding-top: 19px;
+
+    margin-top: 22px;
+}
+
+.premium-note-title {
+    font-size: 35px;
+    -unity-font-style: bold;
+    color: var(--color-text);
+    margin-bottom: 8px;
+}
+
+.premium-note-text {
+    font-size: 25px;
+    color: var(--color-text-muted);
+    white-space: normal;
+}
+
+/* =========================================================
+   Modal cómo funciona
+   ========================================================= */
+
+.modal-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(10, 7, 5, 0.78);
+
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-card {
+    width: 1450px;
+    height: 820px;
+
+    border-radius: 38px;
+    background-color: var(--color-surface);
+
+    border-width: 1px;
+    border-color: var(--border-medium);
+
+    padding: 34px;
+}
+
+.modal-header {
+    height: 88px;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+
+.modal-title {
+    -unity-font-definition: url("../Fonts/Generated/BrandFont.asset");
+    font-size: 55px;
+    -unity-font-style: bold;
+    color: var(--color-text);
+}
+
+.modal-subtitle {
+    font-size: 20px;
+    color: var(--color-gold);
+    -unity-font-style: bold;
+    margin-top: 2px;
+}
+
+.modal-close-button {
+    width: 56px;
+    height: 56px;
+
+    border-radius: var(--radius-pill);
+
+    background-color: rgba(255, 243, 223, 0.08);
+    color: var(--color-text);
+
+    border-width: 1px;
+    border-color: rgba(255, 243, 223, 0.14);
+
+    font-size: 30px;
+    -unity-font-style: bold;
+}
+
+.modal-steps {
+    flex-direction: row;
+    margin-top: 16px;
+}
+
+.modal-step-card {
+    width: 330px;
+    height: 260px;
+
+    border-radius: 28px;
+    background-color: #17100c;
+
+    border-width: 1px;
+    border-color: var(--border-soft);
+
+    padding: 24px;
+
+    margin-right: 16px;
+}
+
+.modal-step-number {
+    width: 60px;
+    height: 40px;
+    font-size: 20px;
+    border-radius: var(--radius-pill);
+    background-color: rgba(214, 170, 91, 0.14);
+
+    color: var(--color-gold);
+    -unity-font-style: bold;
+    -unity-text-align: middle-center;
+
+    margin-bottom: 14px;
+}
+
+.modal-step-title {
+    font-size: 22px;
+    -unity-font-style: bold;
+    color: var(--color-text);
+    margin-bottom: 10px;
+}
+
+.modal-step-text {
+    font-size: 18px;
+    color: var(--color-text-muted);
+    white-space: normal;
+}
+
+.modal-commercial-panel {
+    height: 175px;
+
+    border-radius: 28px;
+
+    background-color: rgba(214, 170, 91, 0.10);
+
+    border-width: 1px;
+    border-color: rgba(214, 170, 91, 0.22);
+
+    padding: 28px;
+
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.modal-commercial-title {
+    font-size: 26px;
+    -unity-font-style: bold;
+    color: var(--color-gold-soft);
+
+    margin-bottom: 12px;
+}
+
+.modal-commercial-text {
+    font-size: 18px;
+    color: var(--color-text-soft);
+    white-space: normal;
+}
+
+.modal-actions {
+    height: 74px;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+
+    margin-top: 24px;
+}
+
+.modal-action-button {
+    width: 220px;
+    height: 58px;
+    font-size: 20px;
+    margin-left: 14px;
+    border-radius: 20px;
+}

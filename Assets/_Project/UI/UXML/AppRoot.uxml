@@ -1,0 +1,5 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" editor-extension-mode="False">
+    <ui:VisualElement name="app" class="app">
+        <ui:VisualElement name="screen-host" class="screen-host" />
+    </ui:VisualElement>
+</ui:UXML>

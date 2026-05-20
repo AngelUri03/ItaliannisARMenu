@@ -1,0 +1,154 @@
+/* =========================================================
+   02_Typography.uss
+   Tipografía general del kiosko
+   Ruta asumida:
+   Assets/_Project/UI/USS/02_Typography.uss
+   Assets/_Project/UI/Fonts/Generated/
+   ========================================================= */
+
+/* Fuente base para toda la app */
+.app {
+    -unity-font-definition: url("../Fonts/Generated/InterfaceFont.asset");
+}
+
+/* =========================================================
+   Marca
+   ========================================================= */
+
+.brand-title {
+    -unity-font-definition: url("../Fonts/Generated/BrandFont.asset");
+    font-size: 66px;
+    -unity-font-style: bold;
+    color: var(--color-text);
+    white-space: nowrap;
+}
+
+.brand-subtitle {
+    -unity-font-definition: url("../Fonts/Generated/InterfaceFontSemiBold.asset");
+    font-size: 18px;
+    -unity-font-style: bold;
+    color: var(--color-gold);
+    letter-spacing: 8px;
+    margin-top: -8px;
+    white-space: nowrap;
+}
+
+/* =========================================================
+   Hero / bienvenida
+   ========================================================= */
+
+.hero-title {
+    -unity-font-definition: url("../Fonts/Generated/BrandFont.asset");
+    width: 760px;
+    font-size: 64px;
+    -unity-font-style: bold;
+    color: var(--color-text);
+    white-space: normal;
+}
+
+.hero-description {
+    -unity-font-definition: url("../Fonts/Generated/InterfaceFont.asset");
+    width: 760px;
+    font-size: 22px;
+    color: var(--color-text-soft);
+    white-space: normal;
+    margin-top: 22px;
+}
+
+/* =========================================================
+   Métricas de bienvenida
+   ========================================================= */
+
+.metric-value {
+    -unity-font-definition: url("../Fonts/Generated/InterfaceFontSemiBold.asset");
+    font-size: 28px;
+    -unity-font-style: bold;
+    color: var(--color-gold);
+    -unity-text-align: middle-center;
+}
+
+.metric-label {
+    -unity-font-definition: url("../Fonts/Generated/InterfaceFont.asset");
+    font-size: 15px;
+    color: var(--color-text-muted);
+    -unity-text-align: middle-center;
+}
+
+/* =========================================================
+   Tarjeta de vista previa AR
+   ========================================================= */
+
+.device-title {
+    -unity-font-definition: url("../Fonts/Generated/InterfaceFontSemiBold.asset");
+    font-size: 17px;
+    -unity-font-style: bold;
+    color: var(--color-text);
+}
+
+.device-badge {
+    -unity-font-definition: url("../Fonts/Generated/InterfaceFontSemiBold.asset");
+    font-size: 12px;
+    -unity-font-style: bold;
+    color: #102015;
+    background-color: var(--color-gold);
+    border-radius: var(--radius-pill);
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.marker-text {
+    -unity-font-definition: url("../Fonts/Generated/InterfaceFontSemiBold.asset");
+    font-size: 12px;
+    -unity-font-style: bold;
+    color: rgba(255, 243, 223, 0.62);
+    -unity-text-align: middle-center;
+}
+
+.floating-title {
+    -unity-font-definition: url("../Fonts/Generated/InterfaceFont.asset");
+    font-size: 13px;
+    color: var(--color-text-muted);
+}
+
+.floating-value {
+    -unity-font-definition: url("../Fonts/Generated/InterfaceFontSemiBold.asset");
+    font-size: 22px;
+    -unity-font-style: bold;
+    color: var(--color-text);
+}
+
+/* =========================================================
+   Mini features
+   ========================================================= */
+
+.mini-feature-title {
+    -unity-font-definition: url("../Fonts/Generated/InterfaceFontSemiBold.asset");
+    font-size: 18px;
+    -unity-font-style: bold;
+    color: var(--color-gold-soft);
+}
+
+.mini-feature-text {
+    -unity-font-definition: url("../Fonts/Generated/InterfaceFont.asset");
+    font-size: 14px;
+    color: var(--color-text-muted);
+    white-space: normal;
+}
+
+/* =========================================================
+   Texto de botones, pills y componentes comunes
+   ========================================================= */
+
+.button {
+    -unity-font-definition: url("../Fonts/Generated/InterfaceFontSemiBold.asset");
+}
+
+.pill {
+    -unity-font-definition: url("../Fonts/Generated/InterfaceFontSemiBold.asset");
+}
+
+.status-pill {
+    -unity-font-definition: url("../Fonts/Generated/InterfaceFontSemiBold.asset");
+}

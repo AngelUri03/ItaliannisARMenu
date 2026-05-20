@@ -1,0 +1,1 @@
+C:\Users\angel\OneDrive\Documentos\Escuela\Semestre 10\TSIC III (Realidad Virtual)\ItaliannisARMenu\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\cxx\RelWithDebInfo\m674j5w4\obj\arm64-v8a

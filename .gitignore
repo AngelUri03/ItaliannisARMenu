@@ -1,0 +1,48 @@
+# Unity generated folders
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Uu]ser[Ss]ettings/
+
+# Visual Studio / Rider
+.vs/
+.vscode/
+*.csproj
+*.sln
+*.user
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+
+# Unity cache / schemas
+UIElementsSchema/
+.QCAR/
+QCAR/
+
+# Vuforia samples and package cache
+Assets/SamplesResources/
+Packages/*.tgz
+
+# Large generated files
+*.apk
+*.aab
+
+# Keep entregables folders and documents
+!Entregables/
+!Entregables/**
+
+# But do NOT upload APK directly to repository
+Entregables/Build/*.apk
+Entregables/Build/*.aab
+
+# Videos: keep mp4 if it is under 100 MB, ignore heavier raw formats
+*.mov
+*.avi
+*.mp4

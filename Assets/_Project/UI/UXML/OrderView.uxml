@@ -1,0 +1,58 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" editor-extension-mode="False">
+    <ui:VisualElement name="order-view" class="screen order-view">
+
+        <ui:VisualElement class="order-top-bar">
+            <ui:VisualElement class="order-brand-block">
+                <ui:Label text="ITALIANNI’S" class="order-brand-title" />
+                <ui:Label text="ORDEN DE MESA" class="order-brand-subtitle" />
+            </ui:VisualElement>
+
+            <ui:VisualElement class="order-top-actions">
+                <ui:Label text="Mesa 12" class="pill pill-soft" />
+                <ui:Label name="order-total-count-label" text="Productos: 0" class="pill pill-green" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+
+        <ui:VisualElement class="order-content">
+
+            <ui:VisualElement class="order-left-panel">
+                <ui:Label text="Mi orden" class="order-title" />
+                <ui:Label text="Revisa los platillos agregados antes de confirmar tu orden." class="order-subtitle" />
+                <ui:ScrollView name="order-scroll" class="order-scroll" mode="Vertical" vertical-scroller-visibility="Auto" horizontal-scroller-visibility="Hidden">
+                    <ui:VisualElement name="order-list" class="order-list" />
+                </ui:ScrollView>
+            </ui:VisualElement>
+
+            <ui:VisualElement class="order-summary-panel">
+
+                <ui:Label text="Resumen" class="order-section-title" />
+
+                <ui:VisualElement class="summary-card">
+                    <ui:VisualElement class="summary-row">
+                        <ui:Label text="Mesa" class="summary-label" />
+                        <ui:Label text="12" class="summary-value" />
+                    </ui:VisualElement>
+
+                    <ui:VisualElement class="summary-row">
+                        <ui:Label text="Productos" class="summary-label" />
+                        <ui:Label name="summary-product-count-label" text="0" class="summary-value" />
+                    </ui:VisualElement>
+
+                    <ui:VisualElement class="summary-row">
+                        <ui:Label text="Estado" class="summary-label" />
+                        <ui:Label text="Simulación" class="summary-value summary-highlight" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+
+                <ui:VisualElement class="order-actions">
+                    <ui:Button name="continue-menu-button" text="Seguir explorando" class="button button-secondary order-button" />
+                    <ui:Button name="clear-order-button" text="Vaciar orden" class="button button-secondary order-button-small" />
+                    <ui:Button name="confirm-order-button" text="Confirmar orden" class="button button-primary order-button" />
+                </ui:VisualElement>
+
+            </ui:VisualElement>
+
+        </ui:VisualElement>
+
+    </ui:VisualElement>
+</ui:UXML>

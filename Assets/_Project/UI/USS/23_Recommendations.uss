@@ -1,0 +1,270 @@
+/* =========================================================
+   23_Recommendations.uss
+   Vista de recomendaciones
+   ========================================================= */
+
+.recommendations-view {
+    background-color: var(--color-bg);
+    flex-direction: column;
+}
+
+/* =========================================================
+   Top bar
+   ========================================================= */
+
+.recommendations-top-bar {
+    height: 104px;
+    background-color: var(--color-red);
+    border-bottom-width: 2px;
+    border-bottom-color: rgba(214, 170, 91, 0.55);
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 42px;
+    padding-right: 42px;
+}
+
+.recommendations-brand-block {
+    flex-direction: column;
+}
+
+.recommendations-brand-title {
+    -unity-font-definition: url("../Fonts/Generated/BrandFont.asset");
+    font-size: 34px;
+    -unity-font-style: bold;
+    color: var(--color-text);
+}
+
+.recommendations-brand-subtitle {
+    -unity-font-definition: url("../Fonts/Generated/InterfaceFontSemiBold.asset");
+    font-size: 13px;
+    color: var(--color-gold-soft);
+    letter-spacing: 5px;
+    margin-top: -4px;
+}
+
+.recommendations-top-actions {
+    flex-direction: row;
+}
+
+.recommendations-top-actions .pill {
+    margin-left: 10px;
+}
+
+/* =========================================================
+   Layout
+   ========================================================= */
+
+.recommendations-content {
+    flex-grow: 1;
+    flex-direction: row;
+    padding: 28px;
+}
+
+.recommendations-left-panel {
+    width: 460px;
+    background-color: var(--color-surface);
+    border-radius: var(--radius-lg);
+    border-width: 1px;
+    border-color: var(--border-medium);
+    padding: 30px;
+    margin-right: 24px;
+}
+
+.recommendations-right-panel {
+    flex-grow: 1;
+    background-color: var(--color-bg-soft);
+    border-radius: var(--radius-lg);
+    border-width: 1px;
+    border-color: var(--border-soft);
+    padding: 30px;
+}
+
+/* =========================================================
+   Left panel
+   ========================================================= */
+
+.recommendations-title {
+    -unity-font-definition: url("../Fonts/Generated/BrandFont.asset");
+    font-size: 42px;
+    -unity-font-style: bold;
+    color: var(--color-text);
+    white-space: normal;
+    margin-bottom: 10px;
+}
+
+.recommendations-subtitle {
+    font-size: 16px;
+    color: var(--color-text-muted);
+    white-space: normal;
+    margin-bottom: 28px;
+}
+
+.recommendation-filter-grid {
+    flex-direction: column;
+}
+
+.recommendation-filter-card {
+    height: 70px;
+    border-radius: 22px;
+    background-color: rgba(255, 243, 223, 0.06);
+    border-width: 1px;
+    border-color: rgba(255, 243, 223, 0.10);
+    color: var(--color-text);
+    font-size: 18px;
+    -unity-font-style: bold;
+    margin-bottom: 14px;
+}
+
+.recommendation-filter-card:hover {
+    background-color: rgba(255, 243, 223, 0.12);
+    border-color: var(--border-medium);
+}
+
+.selected-filter {
+    background-color: var(--color-gold);
+    color: #21140d;
+    border-color: var(--color-gold);
+}
+
+.recommendation-commercial-card {
+    margin-top: auto;
+    background-color: rgba(214, 170, 91, 0.09);
+    border-radius: 26px;
+    border-width: 1px;
+    border-color: rgba(214, 170, 91, 0.25);
+    padding: 22px;
+}
+
+.recommendation-commercial-title {
+    font-size: 20px;
+    -unity-font-style: bold;
+    color: var(--color-gold-soft);
+    margin-bottom: 8px;
+}
+
+.recommendation-commercial-text {
+    font-size: 15px;
+    color: var(--color-text-muted);
+    white-space: normal;
+}
+
+/* =========================================================
+   Right panel
+   ========================================================= */
+
+.recommendations-header-row {
+    height: 86px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 22px;
+}
+
+.recommendation-list-title {
+    -unity-font-definition: url("../Fonts/Generated/BrandFont.asset");
+    font-size: 40px;
+    -unity-font-style: bold;
+    color: var(--color-text);
+}
+
+.recommendation-list-subtitle {
+    font-size: 16px;
+    color: var(--color-text-muted);
+    margin-top: 4px;
+}
+
+.recommendations-back-button {
+    width: 220px;
+    height: 56px;
+    font-size: 16px;
+}
+
+.recommendation-scroll {
+    flex-grow: 1;
+}
+
+.recommendation-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+/* =========================================================
+   Recommendation cards
+   ========================================================= */
+
+.recommendation-card {
+    width: 360px;
+    height: 260px;
+    background-color: var(--color-surface);
+    border-radius: 28px;
+    border-width: 1px;
+    border-color: var(--border-soft);
+    padding: 22px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.recommendation-card:hover {
+    background-color: var(--color-surface-2);
+    border-color: var(--border-medium);
+}
+
+.recommendation-card-top {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.recommendation-icon {
+    font-size: 42px;
+}
+
+.recommendation-badge {
+    background-color: var(--color-gold);
+    color: #21140d;
+    border-radius: var(--radius-pill);
+    font-size: 12px;
+    -unity-font-style: bold;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+
+.recommendation-name {
+    font-size: 24px;
+    -unity-font-style: bold;
+    color: var(--color-text);
+    white-space: normal;
+    margin-top: 18px;
+}
+
+.recommendation-description {
+    font-size: 15px;
+    color: var(--color-text-muted);
+    white-space: normal;
+    margin-top: 10px;
+}
+
+.recommendation-meta {
+    font-size: 14px;
+    color: var(--color-gold-soft);
+    margin-top: 12px;
+}
+
+.recommendation-card-action {
+    height: 46px;
+    border-radius: 16px;
+    background-color: rgba(255, 243, 223, 0.08);
+    border-width: 1px;
+    border-color: rgba(255, 243, 223, 0.12);
+    color: var(--color-text);
+    font-size: 15px;
+    -unity-font-style: bold;
+    margin-top: auto;
+}
+
+.recommendation-card-action:hover {
+    background-color: rgba(255, 243, 223, 0.14);
+}

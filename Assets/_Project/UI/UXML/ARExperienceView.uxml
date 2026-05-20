@@ -1,0 +1,114 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" editor-extension-mode="False">
+    <ui:VisualElement name="ar-experience-view" class="screen ar-experience-view">
+
+        <ui:VisualElement class="ar-top-bar">
+            <ui:VisualElement class="ar-brand-block">
+                <ui:Label text="ITALIANNI’S" class="ar-brand-title" />
+                <ui:Label text="REALIDAD AUMENTADA" class="ar-brand-subtitle" />
+            </ui:VisualElement>
+
+            <ui:VisualElement class="ar-top-actions">
+                <ui:Label text="Mesa 12" class="ar-top-pill" />
+                <ui:Button name="back-menu-button" text="Volver al menú" class="button button-secondary ar-back-button" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+
+        <ui:VisualElement name="ar-center-status" class="ar-center-status">
+            <ui:Label name="tracking-status-label" text="Busca el marcador de mesa" class="ar-center-status-text" />
+            <ui:Label name="tracking-helper-label" text="Apunta la cámara hacia el marcador impreso" class="ar-center-status-helper" />
+        </ui:VisualElement>
+
+        <ui:VisualElement class="ar-info-panel">
+
+            <ui:VisualElement class="ar-dish-header">
+                <ui:VisualElement class="ar-dish-title-block">
+                    <ui:Label name="ar-dish-name-label" text="Platillo seleccionado" class="ar-dish-name" />
+                    <ui:Label name="ar-dish-category-label" text="Categoría" class="ar-dish-category" />
+                </ui:VisualElement>
+
+                <ui:Label text="AR" class="ar-dish-badge" />
+            </ui:VisualElement>
+
+            <ui:VisualElement class="ar-tabs">
+                <ui:Button name="ar-tab-view-button" text="Vista" class="ar-tab-button ar-tab-selected" />
+                <ui:Button name="ar-tab-ingredients-button" text="Ingredientes" class="ar-tab-button" />
+                <ui:Button name="ar-tab-nutrition-button" text="Nutrición" class="ar-tab-button" />
+                <ui:Button name="ar-tab-tips-button" text="Consejos" class="ar-tab-button" />
+            </ui:VisualElement>
+
+            <ui:VisualElement class="ar-detail-card">
+                <ui:Label name="ar-detail-title-label" text="Vista del platillo" class="ar-detail-title" />
+
+                <ui:ScrollView name="ar-detail-scroll" class="ar-detail-scroll" mode="Vertical" vertical-scroller-visibility="Auto" horizontal-scroller-visibility="Hidden">
+                    <ui:Label
+                        name="ar-detail-body-label"
+                        text="Gira, escala y acomoda el modelo 3D sobre el marcador de mesa para visualizar la porción antes de ordenar."
+                        class="ar-detail-body" />
+                </ui:ScrollView>
+            </ui:VisualElement>
+
+            <ui:VisualElement class="ar-metrics-row">
+                <ui:VisualElement class="ar-metric-card">
+                    <ui:Label text="Escala" class="ar-metric-title" />
+                    <ui:Label name="ar-scale-value-label" text="100%" class="ar-metric-value" />
+                </ui:VisualElement>
+
+                <ui:VisualElement class="ar-metric-card">
+                    <ui:Label text="Rotación" class="ar-metric-title" />
+                    <ui:Label name="ar-rotation-value-label" text="0°" class="ar-metric-value" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+
+            <ui:VisualElement class="ar-status-card">
+                <ui:VisualElement>
+                    <ui:Label text="Estado" class="ar-status-title" />
+                    <ui:Label name="ar-status-value-label" text="Esperando marcador" class="ar-status-value" />
+                </ui:VisualElement>
+
+                <ui:VisualElement name="ar-status-dot" class="ar-status-dot ar-status-dot-waiting" />
+            </ui:VisualElement>
+
+        </ui:VisualElement>
+
+        <ui:VisualElement class="ar-controls-panel">
+
+            <ui:VisualElement class="ar-control-block">
+                <ui:Label text="Rotación" class="ar-control-title" />
+
+                <ui:VisualElement class="ar-control-row">
+                    <ui:Button name="rotate-left-button" text="Izq" class="ar-control-button ar-control-text-button" />
+                    <ui:Button name="reset-ar-button" text="Reset" class="ar-control-button ar-reset-button" />
+                    <ui:Button name="rotate-right-button" text="Der" class="ar-control-button ar-control-text-button" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+
+            <ui:VisualElement class="ar-control-separator" />
+
+            <ui:VisualElement class="ar-control-block">
+                <ui:Label text="Tamaño" class="ar-control-title" />
+
+                <ui:VisualElement class="ar-control-row">
+                    <ui:Button name="scale-down-button" text="−" class="ar-control-button ar-symbol-button" />
+                    <ui:Button name="scale-up-button" text="+" class="ar-control-button ar-symbol-button" />
+                    <ui:Button name="presentation-scale-button" text="Vista grande" class="ar-control-button ar-presentation-button" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+
+            <ui:VisualElement class="ar-control-separator" />
+
+            <ui:VisualElement class="ar-control-help">
+                <ui:Label text="Consejo" class="ar-help-title" />
+                <ui:Label name="ar-help-text-label" text="Mantén el marcador dentro de la cámara." class="ar-help-text" />
+            </ui:VisualElement>
+
+            <ui:VisualElement class="ar-bottom-dish-navigation">
+                <ui:Button name="previous-dish-button" text="‹ Anterior" class="button button-secondary ar-bottom-nav-button" />
+                <ui:Button name="next-dish-button" text="Siguiente ›" class="button button-secondary ar-bottom-nav-button" />
+            </ui:VisualElement>
+
+            <ui:Button name="add-order-from-ar-button" text="Agregar a orden" class="button button-primary ar-add-order-button" />
+
+        </ui:VisualElement>
+
+    </ui:VisualElement>
+</ui:UXML>

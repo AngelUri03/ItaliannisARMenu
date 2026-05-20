@@ -1,0 +1,147 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90afc48bf8173044aa874fc3ba29b683, type: 3}
+  m_Name: ARDishModelCatalog
+  m_EditorClassIdentifier: Assembly-CSharp::ARDishModelCatalog
+  entries:
+  - dishId: omelette_champinones
+    prefab: {fileID: 4827561974602462083, guid: d753953d43ecb864daac43231f38cc94,
+      type: 3}
+  - dishId: omelette_di_formaggio
+    prefab: {fileID: 527712784526056992, guid: e881ab2bdbae5984f9202d24c66f89f4, type: 3}
+  - dishId: huevos_al_forno
+    prefab: {fileID: 1952422741999444510, guid: 4c9b46d58d53bcb488070ca15a2c0505,
+      type: 3}
+  - dishId: omelette_leggero
+    prefab: {fileID: 6052236559949539342, guid: 1e5817a17ea1d744aa7f7268986951cc,
+      type: 3}
+  - dishId: omelette_di_asparagi
+    prefab: {fileID: 1862349356791386326, guid: 739c8ed7a127c0b46b92e65458d2c86f,
+      type: 3}
+  - dishId: huevo_tocino_alla_italiana
+    prefab: {fileID: 9101388193792673482, guid: 0d02d4ebc70e31144a750d74cca2c9f4,
+      type: 3}
+  - dishId: enfrijoladas_cecina
+    prefab: {fileID: 3352769740456577391, guid: 64ed571c4cea787499df2c4b6ad05014,
+      type: 3}
+  - dishId: enchiladas_suizas
+    prefab: {fileID: 1453481934177296812, guid: 1decd156d2f0781449c25fc8ad5049ac,
+      type: 3}
+  - dishId: insalata_pera_gorgonzola
+    prefab: {fileID: 3254615185804336383, guid: d059fcc325a057347aae52c2cc5fc820,
+      type: 3}
+  - dishId: insalata_cesare_gde
+    prefab: {fileID: 8034788012503972907, guid: 6014a83c8ee1f204583ad6197765e086,
+      type: 3}
+  - dishId: zuppa_minestrone
+    prefab: {fileID: 1595522358211635787, guid: 53423775c38fb0f45b02576186422c53,
+      type: 3}
+  - dishId: antipasto_formaggio
+    prefab: {fileID: 2217275376337838675, guid: 06e051f3ae1eabd489bd0c7f345ac829,
+      type: 3}
+  - dishId: pizza_peperoni
+    prefab: {fileID: 6746206191716033373, guid: 6394b9c80380b6248a55ad8a6a5fd458,
+      type: 3}
+  - dishId: pizza_cuatro_quesos
+    prefab: {fileID: 8755350183329760371, guid: 358887e8e0f87d641b1482b5095cfa18,
+      type: 3}
+  - dishId: pizza_margherita
+    prefab: {fileID: 953162612364440809, guid: 63607c6e6fa9d784db70ed70e36fcab2, type: 3}
+  - dishId: pizza_fra_diavolo
+    prefab: {fileID: 2579037902331997413, guid: 273eceed948251f41b6211e1e227eef4,
+      type: 3}
+  - dishId: pizza_pollo_croccante
+    prefab: {fileID: 7783414112304396917, guid: 3b4385ae43b081845bd88fd8d38a576a,
+      type: 3}
+  - dishId: pizza_bolognesa
+    prefab: {fileID: 3687907811776581683, guid: 3a19500bef126c84e8f464c570b90206,
+      type: 3}
+  - dishId: pizza_toscana
+    prefab: {fileID: 5150997811739147756, guid: 265682a9fa316c54b8c434cc2868e6c8,
+      type: 3}
+  - dishId: pizza_la_mia_creazione
+    prefab: {fileID: 3718402626496196452, guid: 95f694f5c43e0f044a63d6477e73afb6,
+      type: 3}
+  - dishId: fettuccini_alfredo
+    prefab: {fileID: 2253231929637548649, guid: fc4fff99ca9ed3943835157e7fab5a4a,
+      type: 3}
+  - dishId: spaghetti_bolognese
+    prefab: {fileID: 1312068192932137707, guid: 3500d2ba2f47b3b4382e7d0c9876be11,
+      type: 3}
+  - dishId: frutti_di_mare
+    prefab: {fileID: 8059065719893269302, guid: 3246cb60cc6c7524e889ee2f29b1a11d,
+      type: 3}
+  - dishId: linguini_fra_diavolo
+    prefab: {fileID: 2772389012308981662, guid: 89e830b4afa04ef478fae1130188e50a,
+      type: 3}
+  - dishId: lasagna_biancini
+    prefab: {fileID: 5658133060134440293, guid: 03d33a44fae90ee489bf33c362dbf8e1,
+      type: 3}
+  - dishId: ravioli_romana
+    prefab: {fileID: 1643875491576926064, guid: 12c17227ab627dd4ebc47dc35263e13a,
+      type: 3}
+  - dishId: risotto_funghi_pollo
+    prefab: {fileID: 4627383276848376432, guid: 723ef3683ccf03d46ad0d9d368ed90cc,
+      type: 3}
+  - dishId: pollo_parmigiana
+    prefab: {fileID: 6491130668719818026, guid: c3167a6b1c1216040a2a28b8d353e2f6,
+      type: 3}
+  - dishId: salmone_limone
+    prefab: {fileID: 4568522676900253486, guid: 42dad68abc3301d4c8c704232fa0916e,
+      type: 3}
+  - dishId: rib_eye_fiorentina
+    prefab: {fileID: 7327643931402783234, guid: 031c7b0dc2536ff44bbfeedd92530326,
+      type: 3}
+  - dishId: pollo_picatta
+    prefab: {fileID: 3732267815047874340, guid: 68e1dc0ef77abb443930329c2d564f6b,
+      type: 3}
+  - dishId: abb_fettuccini_alfredo
+    prefab: {fileID: 5100468629957497310, guid: d4c5b02407758db40883fea0c4c37f69,
+      type: 3}
+  - dishId: abb_spaghetti_bolognese
+    prefab: {fileID: 8925562936927599588, guid: c062b02fdba8d9948b993816d333af66,
+      type: 3}
+  - dishId: abb_pollo_parmigiana
+    prefab: {fileID: 5764126973131269197, guid: 0a52d569ffe185442b6ae3f950453a48,
+      type: 3}
+  - dishId: tiramisu
+    prefab: {fileID: 2669069388231130970, guid: ec909836678f1e141a1955f26514eeee,
+      type: 3}
+  - dishId: pastel_tartufo
+    prefab: {fileID: 5687384886558954473, guid: d302d1e1164459343af80cb1009178d1,
+      type: 3}
+  - dishId: panna_cotta_frambuesa
+    prefab: {fileID: 1535659385239555307, guid: bc8d249c046655b4594686fbedc8b4dc,
+      type: 3}
+  - dishId: soda_durazno
+    prefab: {fileID: 2080386096742453807, guid: 6568983aaa5d216419cb92dc4debcded,
+      type: 3}
+  - dishId: limonada
+    prefab: {fileID: 1927665150097976386, guid: d91a6b5edae55ce4bb192bd94f7cccad,
+      type: 3}
+  - dishId: aperol_spritz
+    prefab: {fileID: 3116379957728870888, guid: ef1096611defdc04fbbd13364ed58a3f,
+      type: 3}
+  - dishId: vino_chianti_classico
+    prefab: {fileID: 1104905096849906361, guid: 9ee9623731db95740b03d6fb95e9b6bc,
+      type: 3}
+  - dishId: vino_prosecco_extra_dry
+    prefab: {fileID: 375778270933227226, guid: 833952e03dc9389478a935ef6c58461c, type: 3}
+  - dishId: inf_spaghetti_bolognese
+    prefab: {fileID: 6879079954953736152, guid: 53aac995bf3266840bc151dc37142181,
+      type: 3}
+  - dishId: inf_fettuccini_alfredo
+    prefab: {fileID: 1409285265265477389, guid: a7ba6af44ecb90641b988fadea19ec10,
+      type: 3}
+  - dishId: inf_pizza_pepperoni
+    prefab: {fileID: 2241118831463447137, guid: 776b25794ce409c4bb0ad84052b5495c,
+      type: 3}

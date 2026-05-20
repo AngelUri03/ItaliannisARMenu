@@ -1,0 +1,66 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" editor-extension-mode="False">
+    <ui:VisualElement name="confirmation-view" class="screen confirmation-view">
+
+        <ui:VisualElement class="confirmation-ambient confirmation-ambient-red" />
+        <ui:VisualElement class="confirmation-ambient confirmation-ambient-gold" />
+
+        <ui:VisualElement class="confirmation-card">
+
+            <ui:VisualElement class="confirmation-brand">
+                <ui:Label text="ITALIANNI’S" class="confirmation-brand-title" />
+                <ui:Label text="AR TABLE MENU" class="confirmation-brand-subtitle" />
+            </ui:VisualElement>
+
+            <ui:VisualElement class="confirmation-icon-ring">
+                <ui:Label text="✓" class="confirmation-icon" />
+            </ui:VisualElement>
+
+            <ui:Label text="Orden confirmada" class="confirmation-title" />
+
+            <ui:Label
+                name="confirmation-message-label"
+                text="Tu orden fue registrada correctamente. Gracias por usar el menú interactivo de mesa."
+                class="confirmation-message" />
+
+            <ui:VisualElement class="confirmation-summary">
+                <ui:VisualElement class="confirmation-summary-item">
+                    <ui:Label text="Mesa" class="confirmation-summary-label" />
+                    <ui:Label text="12" class="confirmation-summary-value" />
+                </ui:VisualElement>
+
+                <ui:VisualElement class="confirmation-divider" />
+
+                <ui:VisualElement class="confirmation-summary-item">
+                    <ui:Label text="Productos" class="confirmation-summary-label" />
+                    <ui:Label name="confirmation-product-count-label" text="0" class="confirmation-summary-value" />
+                </ui:VisualElement>
+
+                <ui:VisualElement class="confirmation-divider" />
+
+                <ui:VisualElement class="confirmation-summary-item">
+                    <ui:Label text="Estado" class="confirmation-summary-label" />
+                    <ui:Label text="Confirmada" class="confirmation-summary-value confirmation-gold" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+
+            <ui:VisualElement class="confirmation-actions">
+                <ui:Button
+                    name="new-order-button"
+                    text="Nueva orden"
+                    class="button button-primary confirmation-button" />
+
+                <ui:Button
+                    name="back-menu-button"
+                    text="Volver al menú"
+                    class="button button-secondary confirmation-button" />
+
+                <ui:Button
+                    name="back-start-button"
+                    text="Volver al inicio"
+                    class="button button-secondary confirmation-button-small" />
+            </ui:VisualElement>
+
+        </ui:VisualElement>
+
+    </ui:VisualElement>
+</ui:UXML>

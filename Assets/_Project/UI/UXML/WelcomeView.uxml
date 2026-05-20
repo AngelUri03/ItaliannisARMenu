@@ -1,0 +1,224 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" editor-extension-mode="False">
+    <ui:VisualElement name="welcome-view" class="screen welcome-view">
+
+        <ui:VisualElement class="ambient ambient-red" />
+        <ui:VisualElement class="ambient ambient-gold" />
+        <ui:VisualElement class="ambient ambient-green" />
+
+        <ui:VisualElement class="welcome-shell">
+
+            <ui:VisualElement class="welcome-top">
+                <ui:VisualElement class="brand-stack">
+                    <ui:Label text="ITALIANNI’S" class="brand-title" />
+                    <ui:Label text="AR TABLE MENU" class="brand-subtitle" />
+                </ui:VisualElement>
+
+                <ui:VisualElement class="top-status">
+                    <ui:Label text="Mesa 12" class="pill pill-soft" />
+                    <ui:Label text="Experiencia interactiva" class="pill pill-green" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+
+            <ui:VisualElement class="welcome-content">
+
+                <ui:VisualElement class="hero-copy">
+
+                    <ui:Label text="MENÚ DIGITAL DE MESA" class="welcome-eyebrow" />
+
+                    <ui:Label text="Elige mejor antes de ordenar" class="hero-title" />
+
+                    <ui:Label
+                        text="Explora el menú, revisa detalles del platillo y visualiza opciones seleccionadas en Realidad Aumentada directamente sobre tu mesa."
+                        class="hero-description" />
+
+                    <ui:VisualElement class="hero-actions">
+                        <ui:Button name="start-experience-button" text="Explorar menú" class="button button-primary button-xl" />
+                        <ui:Button name="learn-more-button" text="Cómo funciona" class="button button-secondary button-xl" />
+                    </ui:VisualElement>
+
+                    <ui:VisualElement class="welcome-trust-row">
+                        <ui:VisualElement class="trust-item">
+                            <ui:Label text="RA" class="trust-value" />
+                            <ui:Label text="Vista sobre mesa" class="trust-label" />
+                        </ui:VisualElement>
+
+                        <ui:VisualElement class="trust-separator" />
+
+                        <ui:VisualElement class="trust-item">
+                            <ui:Label text="3D" class="trust-value" />
+                            <ui:Label text="Platillos destacados" class="trust-label" />
+                        </ui:VisualElement>
+
+                        <ui:VisualElement class="trust-separator" />
+
+                        <ui:VisualElement class="trust-item">
+                            <ui:Label text="UX" class="trust-value" />
+                            <ui:Label text="Kiosko premium" class="trust-label" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+
+                    <ui:VisualElement class="experience-flow">
+                        <ui:VisualElement class="flow-step">
+                            <ui:Label text="01" class="flow-number" />
+                            <ui:VisualElement>
+                                <ui:Label text="Explora" class="flow-title" />
+                                <ui:Label text="Navega por categorías del menú." class="flow-text" />
+                            </ui:VisualElement>
+                        </ui:VisualElement>
+
+                        <ui:VisualElement class="flow-step">
+                            <ui:Label text="02" class="flow-number" />
+                            <ui:VisualElement>
+                                <ui:Label text="Selecciona" class="flow-title" />
+                                <ui:Label text="Consulta descripción, porción y calorías." class="flow-text" />
+                            </ui:VisualElement>
+                        </ui:VisualElement>
+
+                        <ui:VisualElement class="flow-step">
+                            <ui:Label text="03" class="flow-number" />
+                            <ui:VisualElement>
+                                <ui:Label text="Visualiza en RA" class="flow-title" />
+                                <ui:Label text="Gira, escala y revisa el platillo en 3D." class="flow-text" />
+                            </ui:VisualElement>
+                        </ui:VisualElement>
+
+                        <ui:VisualElement class="flow-step">
+                            <ui:Label text="04" class="flow-number" />
+                            <ui:VisualElement>
+                                <ui:Label text="Agrega" class="flow-title" />
+                                <ui:Label text="Arma una orden simulada para la mesa." class="flow-text" />
+                            </ui:VisualElement>
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+
+                </ui:VisualElement>
+
+                <ui:VisualElement class="hero-visual">
+
+                    <ui:VisualElement class="premium-preview-card">
+
+                        <ui:VisualElement class="preview-header">
+                            <ui:VisualElement class="preview-live-dot" />
+                            <ui:Label text="Vista previa de experiencia" class="preview-title" />
+                            <ui:Label text="DEMO" class="preview-badge" />
+                        </ui:VisualElement>
+
+                        <ui:VisualElement class="preview-stage">
+
+                            <ui:VisualElement class="table-surface">
+
+                                <ui:VisualElement class="marker-card">
+                                    <ui:Label text="MARCADOR DE MESA" class="marker-text" />
+                                </ui:VisualElement>
+
+                                <ui:VisualElement class="plate-shadow" />
+
+                                <ui:VisualElement class="plate">
+                                    <ui:VisualElement class="pizza-base">
+                                        <ui:VisualElement class="pizza-slice slice-one" />
+                                        <ui:VisualElement class="pizza-slice slice-two" />
+                                        <ui:VisualElement class="pizza-slice slice-three" />
+                                    </ui:VisualElement>
+                                </ui:VisualElement>
+
+                                <ui:VisualElement class="model-label model-label-top">
+                                    <ui:Label text="Después de elegir un platillo" class="model-label-small" />
+                                    <ui:Label text="Vista AR disponible" class="model-label-main" />
+                                </ui:VisualElement>
+
+                            </ui:VisualElement>
+
+                            <ui:VisualElement class="preview-control-card control-left">
+                                <ui:Label text="Rotación" class="floating-title" />
+                                <ui:Label text="360°" class="floating-value" />
+                            </ui:VisualElement>
+
+                            <ui:VisualElement class="preview-control-card control-right">
+                                <ui:Label text="Escala" class="floating-title" />
+                                <ui:Label text="Ajustable" class="floating-value" />
+                            </ui:VisualElement>
+
+                        </ui:VisualElement>
+
+                    </ui:VisualElement>
+
+                    <ui:VisualElement class="premium-note-card">
+                        <ui:Label text="Diseñado para mesa" class="premium-note-title" />
+                        <ui:Label
+                            text="La experiencia inicia desde el menú. La Realidad Aumentada se activa únicamente después de seleccionar un platillo compatible."
+                            class="premium-note-text" />
+                    </ui:VisualElement>
+
+                </ui:VisualElement>
+
+            </ui:VisualElement>
+
+        </ui:VisualElement>
+
+        <ui:VisualElement name="how-it-works-modal" class="modal-overlay hidden">
+
+            <ui:VisualElement class="modal-card">
+
+                <ui:VisualElement class="modal-header">
+                    <ui:VisualElement>
+                        <ui:Label text="Cómo funciona" class="modal-title" />
+                        <ui:Label text="Experiencia de menú interactivo con Realidad Aumentada" class="modal-subtitle" />
+                    </ui:VisualElement>
+
+                    <ui:Button name="close-how-it-works-button" text="×" class="modal-close-button" />
+                </ui:VisualElement>
+
+                <ui:VisualElement class="modal-steps">
+
+                    <ui:VisualElement class="modal-step-card">
+                        <ui:Label text="01" class="modal-step-number" />
+                        <ui:Label text="Explora el menú" class="modal-step-title" />
+                        <ui:Label
+                            text="El cliente navega por categorías como pizzas, pastas, postres, bebidas y platillos destacados."
+                            class="modal-step-text" />
+                    </ui:VisualElement>
+
+                    <ui:VisualElement class="modal-step-card">
+                        <ui:Label text="02" class="modal-step-number" />
+                        <ui:Label text="Selecciona un platillo" class="modal-step-title" />
+                        <ui:Label
+                            text="Cada platillo muestra descripción, porción, calorías y disponibilidad para vista en RA."
+                            class="modal-step-text" />
+                    </ui:VisualElement>
+
+                    <ui:VisualElement class="modal-step-card">
+                        <ui:Label text="03" class="modal-step-number" />
+                        <ui:Label text="Visualiza en RA" class="modal-step-title" />
+                        <ui:Label
+                            text="Los platillos compatibles pueden verse en 3D sobre el marcador de la mesa."
+                            class="modal-step-text" />
+                    </ui:VisualElement>
+
+                    <ui:VisualElement class="modal-step-card">
+                        <ui:Label text="04" class="modal-step-number" />
+                        <ui:Label text="Arma una orden" class="modal-step-title" />
+                        <ui:Label
+                            text="El cliente agrega platillos a una orden simulada, revisa el resumen y confirma la experiencia."
+                            class="modal-step-text" />
+                    </ui:VisualElement>
+
+                </ui:VisualElement>
+
+                <ui:VisualElement class="modal-commercial-panel">
+                    <ui:Label text="Valor comercial" class="modal-commercial-title" />
+                    <ui:Label
+                        text="Este prototipo demuestra cómo un restaurante puede transformar su menú tradicional en una experiencia digital de mesa, reduciendo dudas del cliente y haciendo más atractiva la selección de platillos."
+                        class="modal-commercial-text" />
+                </ui:VisualElement>
+
+                <ui:VisualElement class="modal-actions">
+                    <ui:Button name="modal-start-button" text="Explorar menú" class="button button-primary modal-action-button" />
+                    <ui:Button name="modal-close-button" text="Cerrar" class="button button-secondary modal-action-button" />
+                </ui:VisualElement>
+
+            </ui:VisualElement>
+
+        </ui:VisualElement>
+
+    </ui:VisualElement>
+</ui:UXML>

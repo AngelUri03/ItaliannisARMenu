@@ -1,0 +1,239 @@
+/* =========================================================
+   22_Confirmation.uss
+   Pantalla final de confirmación de orden
+   Samsung Galaxy Tab S10 FE horizontal
+   ========================================================= */
+
+.confirmation-view {
+    width: 100%;
+    height: 100%;
+
+    background-color: #070504;
+
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+}
+
+/* =========================================================
+   Ambient
+   ========================================================= */
+
+.confirmation-ambient {
+    position: absolute;
+    border-radius: 999px;
+}
+
+.confirmation-ambient-red {
+    width: 900px;
+    height: 760px;
+
+    right: -280px;
+    top: -300px;
+
+    background-color: rgba(111, 23, 23, 0.48);
+}
+
+.confirmation-ambient-gold {
+    width: 680px;
+    height: 620px;
+
+    left: -260px;
+    bottom: -300px;
+
+    background-color: rgba(214, 170, 91, 0.16);
+}
+
+/* =========================================================
+   Main card
+   ========================================================= */
+
+.confirmation-card {
+    width: 1420px;
+    height: 1120px;
+
+    background-color: rgba(16, 11, 8, 0.94);
+
+    border-radius: 42px;
+
+    border-width: 1px;
+    border-color: rgba(214, 170, 91, 0.28);
+
+    padding-left: 58px;
+    padding-right: 58px;
+    padding-top: 46px;
+    padding-bottom: 46px;
+
+    align-items: center;
+}
+
+/* =========================================================
+   Brand
+   ========================================================= */
+
+.confirmation-brand {
+    align-items: center;
+
+    margin-bottom: 30px;
+}
+
+.confirmation-brand-title {
+    -unity-font-definition: url("../Fonts/Generated/BrandFont.asset");
+    font-size: 50px;
+    -unity-font-style: bold;
+    color: var(--color-text);
+    letter-spacing: 2px;
+}
+
+.confirmation-brand-subtitle {
+    -unity-font-definition: url("../Fonts/Generated/InterfaceFontSemiBold.asset");
+    font-size: 12px;
+    color: var(--color-gold-soft);
+    letter-spacing: 4px;
+
+    margin-top: -4px;
+}
+
+/* =========================================================
+   Icon
+   ========================================================= */
+
+.confirmation-icon-ring {
+    width: 150px;
+    height: 150px;
+
+    border-radius: 999px;
+
+    background-color: rgba(35, 107, 58, 0.18);
+
+    border-width: 2px;
+    border-color: rgba(35, 107, 58, 0.72);
+
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 30px;
+}
+
+.confirmation-icon {
+    font-size: 84px;
+    color: var(--color-gold);
+
+    -unity-font-style: bold;
+    -unity-text-align: middle-center;
+}
+
+/* =========================================================
+   Text
+   ========================================================= */
+
+.confirmation-title {
+    width: 100%;
+
+    -unity-font-definition: url("../Fonts/Generated/BrandFont.asset");
+    font-size: 56px;
+    -unity-font-style: bold;
+
+    color: var(--color-text);
+
+    -unity-text-align: middle-center;
+
+    margin-bottom: 18px;
+}
+
+.confirmation-message {
+    width: 1020px;
+
+    font-size: 24px;
+    color: var(--color-text-soft);
+
+    white-space: normal;
+    -unity-text-align: middle-center;
+
+    margin-bottom: 34px;
+}
+
+/* =========================================================
+   Summary
+   ========================================================= */
+
+.confirmation-summary {
+    width: 1080px;
+    height: 145px;
+
+    flex-direction: row;
+    align-items: center;
+
+    background-color: rgba(255, 243, 223, 0.055);
+
+    border-radius: 30px;
+
+    border-width: 1px;
+    border-color: rgba(255, 243, 223, 0.10);
+
+    margin-bottom: 34px;
+}
+
+.confirmation-summary-item {
+    flex-grow: 1;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.confirmation-summary-label {
+    font-size: 18px;
+    color: var(--color-text-muted);
+
+    margin-bottom: 8px;
+}
+
+.confirmation-summary-value {
+    font-size: 28px;
+    -unity-font-style: bold;
+    color: var(--color-text);
+}
+
+.confirmation-gold {
+    color: var(--color-gold);
+}
+
+.confirmation-divider {
+    width: 1px;
+    height: 76px;
+
+    background-color: rgba(255, 243, 223, 0.14);
+}
+
+/* =========================================================
+   Actions
+   ========================================================= */
+
+.confirmation-actions {
+    width: 1080px;
+    align-items: stretch;
+    margin-top: 20px;
+}
+
+.confirmation-button {
+    height: 74px;
+
+    border-radius: 22px;
+
+    font-size: 23px;
+    -unity-font-style: bold;
+
+    margin-bottom: 28px;
+}
+
+.confirmation-button-small {
+    height: 74px;
+
+    border-radius: 22px;
+
+    font-size: 23px;
+    -unity-font-style: bold;
+
+    margin-bottom: 28px;
+}

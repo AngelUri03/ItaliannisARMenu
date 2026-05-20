@@ -1,0 +1,70 @@
+.button {
+    border-width: 0;
+    border-radius: var(--radius-md);
+    -unity-font-style: bold;
+}
+
+.button-xl {
+    height: 76px;
+    font-size: 23px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.button-primary {
+    background-color: var(--color-gold);
+    color: #21140d;
+}
+
+.button-primary:hover {
+    background-color: var(--color-gold-2);
+}
+
+.button-primary:active {
+    background-color: #bf9040;
+}
+
+.button-secondary {
+    background-color: rgba(255, 243, 223, 0.08);
+    color: var(--color-text);
+    border-width: 1px;
+    border-color: var(--border-medium);
+}
+
+.button-secondary:hover {
+    background-color: rgba(255, 243, 223, 0.13);
+    border-color: var(--border-strong);
+}
+
+.button-secondary:active {
+    background-color: rgba(255, 243, 223, 0.06);
+}
+
+.pill {
+    border-radius: var(--radius-pill);
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    font-size: 15px;
+    -unity-font-style: bold;
+}
+
+.pill-soft {
+    background-color: rgba(255, 243, 223, 0.10);
+    color: var(--color-text);
+    border-width: 1px;
+    border-color: rgba(255, 243, 223, 0.10);
+}
+
+.pill-green {
+    background-color: var(--color-green);
+    color: var(--color-text);
+}
+
+.glass-card {
+    background-color: rgba(255, 243, 223, 0.06);
+    border-width: 1px;
+    border-color: rgba(255, 243, 223, 0.12);
+    border-radius: var(--radius-lg);
+}

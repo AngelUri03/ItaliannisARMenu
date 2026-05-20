@@ -1,0 +1,199 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" editor-extension-mode="False">
+    <ui:VisualElement name="menu-home-view" class="screen menu-home-view">
+
+        <ui:VisualElement class="menu-top-bar">
+            <ui:VisualElement class="menu-brand-block">
+                <ui:Label text="ITALIANNI’S" class="menu-brand-title" />
+                <ui:Label text="AR TABLE MENU" class="menu-brand-subtitle" />
+            </ui:VisualElement>
+
+            <ui:VisualElement class="menu-top-actions">
+                <ui:Label text="Mesa 12" class="pill pill-soft pill-left" />
+                <ui:Label name="menu-ar-status-label" text="Modelos 3D listos" class="pill pill-green" />
+                <ui:Label name="order-count-label" text="Orden: 0" class="pill pill-soft pill-left-2" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+
+        <ui:VisualElement class="menu-content">
+
+            <ui:VisualElement class="menu-main-panel">
+
+                <ui:VisualElement class="menu-main-header">
+                    <ui:VisualElement class="menu-header-left">
+                        <ui:Label name="current-category-label" text="Recomendados" class="menu-title" />
+                        <ui:Label name="current-filter-description-label" text="Explora platillos destacados, revisa detalles y visualiza cada producto en 3D o Realidad Aumentada." class="menu-subtitle" />
+
+                        <ui:VisualElement class="section-filter-row">
+                            <ui:Button name="filter-recommended-button" text="Recomendados" class="section-filter-button section-filter-selected" />
+                            <ui:Button name="filter-all-button" text="Todo" class="section-filter-button" />
+                            <ui:Button name="filter-food-button" text="Comidas" class="section-filter-button" />
+                            <ui:Button name="filter-breakfast-button" text="Desayunos" class="section-filter-button" />
+                            <ui:Button name="filter-desserts-button" text="Postres" class="section-filter-button" />
+                            <ui:Button name="filter-drinks-button" text="Bebidas" class="section-filter-button" />
+                            <ui:Button name="filter-kids-button" text="Infantil" class="section-filter-button" />                        </ui:VisualElement>
+                    </ui:VisualElement>
+
+                    <ui:VisualElement class="search-panel">
+                        <ui:Label text="Buscar platillo" class="search-label" />
+                        <ui:TextField name="dish-search-field" class="search-field" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+
+                <ui:ScrollView name="dish-scroll" class="dish-scroll" mode="Vertical" vertical-scroller-visibility="Auto" horizontal-scroller-visibility="Hidden">
+                    <ui:VisualElement name="dish-list" class="dish-list" />
+                </ui:ScrollView>
+
+            </ui:VisualElement>
+
+            <ui:VisualElement class="dish-detail-panel">
+
+                <ui:Label text="Detalle" class="menu-section-title" />
+
+                <ui:VisualElement class="detail-preview-card">
+                    <ui:Image name="detail-dish-image" class="detail-dish-image" />
+                    <ui:Label name="detail-ar-badge-label" text="RA disponible" class="detail-ar-badge" />
+                </ui:VisualElement>
+
+                <ui:Label name="detail-name-label" text="Selecciona un platillo" class="detail-name" />
+                <ui:Label name="detail-category-label" text="Categoría" class="detail-category" />
+
+                <ui:Label
+                    name="detail-description-label"
+                    text="Elige un platillo del menú para consultar su descripción, porción, calorías, información completa y visualización 3D."
+                    class="detail-description" />
+
+                <ui:VisualElement class="detail-info-row">
+                    <ui:VisualElement class="detail-info-card">
+                        <ui:Label text="Porción" class="detail-info-title" />
+                        <ui:Label name="detail-portion-label" text="-" class="detail-info-value" />
+                    </ui:VisualElement>
+
+                    <ui:VisualElement class="detail-info-card">
+                        <ui:Label text="Calorías" class="detail-info-title" />
+                        <ui:Label name="detail-calories-label" text="-" class="detail-info-value" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+
+                <ui:VisualElement class="detail-actions">
+                    <ui:Button name="open-detail-modal-button" text="Más detalles" class="button button-secondary detail-button" />
+                    <ui:Button name="view-ar-button" text="Ver en Realidad Aumentada" class="button button-primary detail-button" />
+                    <ui:Button name="add-order-button" text="Agregar a orden" class="button button-secondary detail-button" />
+                </ui:VisualElement>
+
+            </ui:VisualElement>
+
+        </ui:VisualElement>
+
+        <ui:VisualElement class="bottom-navigation">
+            <ui:Button name="bottom-home-button" text="Inicio" class="bottom-nav-button" />
+            <ui:Button text="Menú" class="bottom-nav-button bottom-nav-selected" />
+            <ui:Button name="nav-order-button" text="Mi orden" class="bottom-nav-button" />
+        </ui:VisualElement>
+
+        <ui:VisualElement name="dish-detail-modal" class="dish-modal-overlay hidden">
+
+            <ui:VisualElement class="dish-modal-card">
+
+                <ui:VisualElement class="dish-modal-header">
+                    <ui:VisualElement class="dish-modal-title-block">
+                        <ui:Label name="modal-dish-name-label" text="Platillo" class="dish-modal-title" />
+                        <ui:Label name="modal-dish-meta-label" text="Categoría · Porción · Calorías" class="dish-modal-subtitle" />
+                    </ui:VisualElement>
+
+                    <ui:Button name="close-dish-modal-button" text="×" class="dish-modal-close-button" />
+                </ui:VisualElement>
+
+                <ui:VisualElement class="dish-modal-content">
+
+                    <ui:VisualElement class="dish-modal-left">
+
+                        <ui:VisualElement class="dish-modal-visual-card">
+                            <ui:Image name="modal-dish-image" class="dish-modal-image" />
+                            <ui:Label name="modal-dish-ar-label" text="Modelo 3D listo" class="dish-modal-ar-badge" />
+                        </ui:VisualElement>
+
+                        <ui:VisualElement class="dish-modal-quick-info">
+                            <ui:VisualElement class="dish-modal-info-row">
+                                <ui:Label text="Sección" class="dish-modal-info-label" />
+                                <ui:Label name="modal-section-label" text="-" class="dish-modal-info-value" />
+                            </ui:VisualElement>
+
+                            <ui:VisualElement class="dish-modal-info-row">
+                                <ui:Label text="Subcategoría" class="dish-modal-info-label" />
+                                <ui:Label name="modal-subcategory-label" text="-" class="dish-modal-info-value" />
+                            </ui:VisualElement>
+
+                            <ui:VisualElement class="dish-modal-info-row">
+                                <ui:Label text="Porción" class="dish-modal-info-label" />
+                                <ui:Label name="modal-portion-label" text="-" class="dish-modal-info-value" />
+                            </ui:VisualElement>
+
+                            <ui:VisualElement class="dish-modal-info-row">
+                                <ui:Label text="Calorías" class="dish-modal-info-label" />
+                                <ui:Label name="modal-calories-label" text="-" class="dish-modal-info-value" />
+                            </ui:VisualElement>
+
+                            <ui:VisualElement class="dish-modal-info-row dish-modal-tags-row">
+                                <ui:Label text="Etiquetas" class="dish-modal-info-label" />
+                                <ui:Label name="modal-tags-label" text="-" class="dish-modal-info-value dish-modal-tags-value" />
+                            </ui:VisualElement>
+                        </ui:VisualElement>
+
+                    </ui:VisualElement>
+
+                    <ui:VisualElement class="dish-modal-right">
+
+                        <ui:VisualElement class="dish-modal-tabs">
+                            <ui:Button name="modal-tab-summary-button" text="Resumen" class="dish-modal-tab dish-modal-tab-selected" />
+                            <ui:Button name="modal-tab-ingredients-button" text="Ingredientes" class="dish-modal-tab" />
+                            <ui:Button name="modal-tab-nutrition-button" text="Nutrición" class="dish-modal-tab" />
+                            <ui:Button name="modal-tab-allergens-button" text="Alérgenos" class="dish-modal-tab" />
+                            <ui:Button name="modal-tab-ar-button" text="Modelo 3D" class="dish-modal-tab" />
+                        </ui:VisualElement>
+
+                        <ui:VisualElement name="dish-modal-text-card" class="dish-modal-text-card">
+                            <ui:Label name="modal-detail-title-label" text="Resumen del platillo" class="dish-modal-detail-title" />
+
+                            <ui:ScrollView name="dish-modal-scroll" class="dish-modal-scroll" mode="Vertical" vertical-scroller-visibility="Auto" horizontal-scroller-visibility="Hidden">
+                                <ui:Label name="modal-detail-body-label" text="Selecciona un platillo para ver información completa." class="dish-modal-detail-body" />
+                            </ui:ScrollView>
+                        </ui:VisualElement>
+
+                        <ui:VisualElement name="dish-model-viewer-panel" class="dish-model-viewer-panel hidden">
+
+                            <ui:VisualElement class="dish-model-viewer-header">
+                                <ui:VisualElement>
+                                    <ui:Label name="model-viewer-title-label" text="Visor 3D" class="dish-model-viewer-title" />
+                                    <ui:Label name="model-viewer-subtitle-label" text="Modelo cargado desde el catálogo AR" class="dish-model-viewer-subtitle" />
+                                </ui:VisualElement>
+
+                                <ui:Label text="3D" class="dish-model-viewer-badge" />
+                            </ui:VisualElement>
+
+                            <ui:VisualElement name="dish-model-render-view" class="dish-model-render-view">
+                                <ui:Image name="dish-model-render-image" class="dish-model-render-image" />
+                            </ui:VisualElement>
+
+                        </ui:VisualElement>
+
+                        <ui:VisualElement class="dish-modal-actions">
+                            <ui:Button name="modal-view-ar-button" text="Ver en RA" class="button button-primary dish-modal-action-button" />
+                            <ui:Button name="modal-add-order-button" text="Agregar a orden" class="button button-secondary dish-modal-action-button" />
+                            <ui:Button name="modal-close-button" text="Cerrar" class="button button-secondary dish-modal-action-button-small" />
+                        </ui:VisualElement>
+
+                    </ui:VisualElement>
+
+                </ui:VisualElement>
+
+            </ui:VisualElement>
+
+        </ui:VisualElement>
+
+        <ui:VisualElement name="menu-toast" class="menu-toast hidden">
+            <ui:Label name="menu-toast-title-label" text="Platillo agregado" class="menu-toast-title" />
+            <ui:Label name="menu-toast-message-label" text="Se agregó a tu orden." class="menu-toast-message" />
+        </ui:VisualElement>
+
+    </ui:VisualElement>
+</ui:UXML>

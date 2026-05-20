@@ -1,0 +1,8 @@
+C:/Users/angel/OneDrive/Documentos/Escuela/Semestre 10/TSIC III (Realidad Virtual)/ItaliannisARMenu/.utmp/RelWithDebInfo/m674j5w4/arm64-v8a/CMakeFiles/edit_cache.dir
+C:/Users/angel/OneDrive/Documentos/Escuela/Semestre 10/TSIC III (Realidad Virtual)/ItaliannisARMenu/.utmp/RelWithDebInfo/m674j5w4/arm64-v8a/CMakeFiles/rebuild_cache.dir
+C:/Users/angel/OneDrive/Documentos/Escuela/Semestre 10/TSIC III (Realidad Virtual)/ItaliannisARMenu/.utmp/RelWithDebInfo/m674j5w4/arm64-v8a/GameActivity/CMakeFiles/game.dir
+C:/Users/angel/OneDrive/Documentos/Escuela/Semestre 10/TSIC III (Realidad Virtual)/ItaliannisARMenu/.utmp/RelWithDebInfo/m674j5w4/arm64-v8a/GameActivity/CMakeFiles/edit_cache.dir
+C:/Users/angel/OneDrive/Documentos/Escuela/Semestre 10/TSIC III (Realidad Virtual)/ItaliannisARMenu/.utmp/RelWithDebInfo/m674j5w4/arm64-v8a/GameActivity/CMakeFiles/rebuild_cache.dir
+C:/Users/angel/OneDrive/Documentos/Escuela/Semestre 10/TSIC III (Realidad Virtual)/ItaliannisARMenu/.utmp/RelWithDebInfo/m674j5w4/arm64-v8a/FramePacing/CMakeFiles/swappywrapper.dir
+C:/Users/angel/OneDrive/Documentos/Escuela/Semestre 10/TSIC III (Realidad Virtual)/ItaliannisARMenu/.utmp/RelWithDebInfo/m674j5w4/arm64-v8a/FramePacing/CMakeFiles/edit_cache.dir
+C:/Users/angel/OneDrive/Documentos/Escuela/Semestre 10/TSIC III (Realidad Virtual)/ItaliannisARMenu/.utmp/RelWithDebInfo/m674j5w4/arm64-v8a/FramePacing/CMakeFiles/rebuild_cache.dir

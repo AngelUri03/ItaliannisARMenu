@@ -1,0 +1,58 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" editor-extension-mode="False">
+    <ui:VisualElement name="recommendations-view" class="screen recommendations-view">
+
+        <ui:VisualElement class="recommendations-top-bar">
+            <ui:VisualElement class="recommendations-brand-block">
+                <ui:Label text="ITALIANNI’S" class="recommendations-brand-title" />
+                <ui:Label text="RECOMENDACIONES" class="recommendations-brand-subtitle" />
+            </ui:VisualElement>
+
+            <ui:VisualElement class="recommendations-top-actions">
+                <ui:Label text="Mesa 12" class="pill pill-soft" />
+                <ui:Label text="Asistente de selección" class="pill pill-green" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+
+        <ui:VisualElement class="recommendations-content">
+
+            <ui:VisualElement class="recommendations-left-panel">
+                <ui:Label text="¿Qué se te antoja hoy?" class="recommendations-title" />
+                <ui:Label
+                    text="Elige una opción y el kiosko te sugerirá platillos destacados para ver en detalle o visualizar en Realidad Aumentada."
+                    class="recommendations-subtitle" />
+
+                <ui:VisualElement class="recommendation-filter-grid">
+                    <ui:Button name="recommend-classic-button" text="Algo clásico" class="recommendation-filter-card selected-filter" />
+                    <ui:Button name="recommend-share-button" text="Para compartir" class="recommendation-filter-card" />
+                    <ui:Button name="recommend-pasta-button" text="Pasta" class="recommendation-filter-card" />
+                    <ui:Button name="recommend-dessert-button" text="Postre" class="recommendation-filter-card" />
+                    <ui:Button name="recommend-ar-button" text="Ver solo AR" class="recommendation-filter-card" />
+                </ui:VisualElement>
+
+                <ui:VisualElement class="recommendation-commercial-card">
+                    <ui:Label text="Experiencia personalizada" class="recommendation-commercial-title" />
+                    <ui:Label
+                        text="Esta sección simula una recomendación inteligente para ayudar al cliente a decidir más rápido y descubrir platillos destacados."
+                        class="recommendation-commercial-text" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+
+            <ui:VisualElement class="recommendations-right-panel">
+                <ui:VisualElement class="recommendations-header-row">
+                    <ui:VisualElement>
+                        <ui:Label name="recommendation-title-label" text="Algo clásico" class="recommendation-list-title" />
+                        <ui:Label name="recommendation-description-label" text="Platillos reconocibles y fáciles de elegir." class="recommendation-list-subtitle" />
+                    </ui:VisualElement>
+
+                    <ui:Button name="recommendations-back-menu-button" text="Volver al menú" class="button button-secondary recommendations-back-button" />
+                </ui:VisualElement>
+
+                <ui:ScrollView class="recommendation-scroll">
+                    <ui:VisualElement name="recommendation-list" class="recommendation-list" />
+                </ui:ScrollView>
+            </ui:VisualElement>
+
+        </ui:VisualElement>
+
+    </ui:VisualElement>
+</ui:UXML>

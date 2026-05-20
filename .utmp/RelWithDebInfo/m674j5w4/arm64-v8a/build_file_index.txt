@@ -1,0 +1,3 @@
+C:\Users\angel\OneDrive\Documentos\Escuela\Semestre 10\TSIC III (Realidad Virtual)\ItaliannisARMenu\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\cpp\CMakeLists.txt
+C:\Users\angel\OneDrive\Documentos\Escuela\Semestre 10\TSIC III (Realidad Virtual)\ItaliannisARMenu\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\cpp\FramePacing\CMakeLists.txt
+C:\Users\angel\OneDrive\Documentos\Escuela\Semestre 10\TSIC III (Realidad Virtual)\ItaliannisARMenu\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\cpp\GameActivity\CMakeLists.txt
